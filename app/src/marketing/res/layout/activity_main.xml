@@ -14,11 +14,7 @@
         android:layout_height="wrap_content"
         android:text="For All" />
 
-    <Button
-        android:id="@+id/mainActivityBtForSalesOnly"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sales" />
+
 
     <Button
         android:id="@+id/mainActivityBtForMarketingOnly"

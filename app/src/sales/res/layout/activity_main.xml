@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Si en esta parte se pone de color rojo no te preocupes. Es porque el BuildVariant
+    esta en marketingDebug-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -19,12 +21,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sales" />
-
-    <Button
-        android:id="@+id/mainActivityBtForMarketingOnly"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Marketing" />
 
     <TextView
         android:id="@+id/mainActivityTvURLDepartamento"

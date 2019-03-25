@@ -16,6 +16,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "default"
+    productFlavors{
+        //Aqui se define las ramificaciones del proyecto: por ejemplo definir una version de Pago y otra free
+        sales{ //Recuerda que applicationId es un identificador Unico de la Aplicación, cuando se sincroniza
+            //en elBuildVariants vamos a tener estas opciones de sales y marketing
+            applicationId "com.example.productflavors.sales"
+            //Estos sons como el sharePreferences guardando diferentes tipos de datos
+            buildConfigField("String","BASE_URL","\"http://www.sales.com\"")
+        }
+        marketing{
+            applicationId "com.example.productflavors.marketing"
+            buildConfigField("String","BASE_URL","\"http://www.marketing.com\"")
+        }
+    }
 }
 
 dependencies {
